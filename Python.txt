@@ -1,0 +1,16 @@
+PWD = ("1967")
+tentative = 3
+for i in range (3):
+    mot_de_passe = input("Entre votre mot de passe : ")
+    if PWD == mot_de_passe:
+        print("Bon mot de passe")
+        print("Accès au compte")
+        break
+    else:
+        print("Mauvais mot de passe veuillez réessayer ultérieurement")
+        tentative = tentative-1
+        if tentative == 0:
+            print("Plus de chance")
+            print("Piratage")
+        else:
+            print("Il vous reste",tentative,"essai")
